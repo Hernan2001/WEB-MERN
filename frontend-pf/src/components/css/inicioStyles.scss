@@ -1,0 +1,156 @@
+.BJava {
+	display: flex;
+	position: relative;
+	align-items: center;
+	left: 40%;
+	height: 330px;
+}
+.menu {
+	background-color: #252020;
+}
+.navbar {
+	background: linear-gradient(rgba(98, 102, 150, 0.65),rgba(164, 84, 168, 0.5));
+	&-brand {
+		margin-right: auto;
+		color: #ffffff;
+	}
+}
+.nav-link {
+	color: #ffffff;
+}
+.offcanvas {
+	background-color: #1c1523;
+	&-title {
+		color: #ffffff;
+	}
+}
+.titulo {
+	color: #ffffff;
+}
+.dropdown-menu {
+	background-color: #3b2a4b;
+}
+.dropdown-item {
+	color: #ffffff;
+}
+.imagenes {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+}
+.p1 {
+	color: #16006f;
+}
+.p2 {
+	color: #066100;
+}
+.p3 {
+	color: #008571;
+}
+.p4 {
+	color: #ff2727;
+}
+.p5 {
+	color: #eeff00;
+}
+.blogs {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.heading-1 {
+	color: #ffffff;
+}
+.container-blogs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+.card-blog {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	.container-img {
+		border-radius: 2rem;
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+	}
+	&:hover .button-group-blog {
+		z-index: 0;
+		right: 1.5rem;
+	}
+}
+.button-group-blog {
+	position: absolute;
+	bottom: 1.5rem;
+	right: -2.5rem;
+	display: flex;
+	gap: 0.7rem;
+	z-index: -1;
+	transition: all 0.3s ease;
+	span {
+		background-color: #fff;
+		padding: 1rem;
+		border-radius: 50%;
+		transition: all 0.4s ease;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		i {
+			font-size: 1.3rem;
+		}
+		&:hover {
+			background-color: var(--primary-color);
+			i {
+				color: #fff;
+			}
+		}
+	}
+}
+.content-blog h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	color: var(--dark-color);
+	font-weight: 500;
+	&:hover {
+		color: var(--primary-color);
+		cursor: pointer;
+	}
+}
+.content-blog p {
+	margin-top: 1rem;
+	font-size: 1.4rem;
+	color: #ffffff;
+}
+.content-blog span {
+	color: rgb(146, 168, 209);
+	font-size: 1.3rem;
+}
+.btn-read-more {
+	padding: 1rem 3rem;
+	background: linear-gradient(rgba(98, 102, 150, 0.65),rgba(164, 84, 168, 0.5));
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	border-radius: 2rem;
+	margin: 3rem 0 5rem;
+	display: inline-block;
+	cursor: pointer;
+	&:hover {
+		background-color: rgba(42, 42, 133, 0.765);
+	}
+}
+.text {
+	font-size: 55px;
+}
+.col-md-3 {
+	background-color: rgb(171, 171, 211);
+}
+.white-en {
+	color: #fff;
+}
+.col-md-6 {
+	color: #fff;
+}
